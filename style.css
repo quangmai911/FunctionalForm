@@ -3,9 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
   font-family: nunito;
 }
+
 section{
   height: 100vh;
   width: 100%;
@@ -15,6 +17,7 @@ section{
   justify-content: center;
   flex-direction: column;
 }
+
 .container{
   width: 90%;
   max-width: 500px;
@@ -25,11 +28,13 @@ section{
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
 .form-group{
   width: 100%;
   margin-top: 20px;
   font-size: 20px;
 }
+
 .form-group input,
 .form-group textarea{
   width: 100%;
@@ -37,9 +42,11 @@ section{
   border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;
 }
+
 textarea{
   resize: vertical;
 }
+
 button[type="submit"]{
   width: 100%;
   border: none;
@@ -55,40 +62,7 @@ button[type="submit"]{
   transition: .3s ease background-color;
   margin-top: 10px;
 }
+
 button[type="submit"]:hover{
   background-color: red;
-}
-#status{
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  opacity: 0;
-  pointer-events: none;
-}
-#status.success{
-  background-color: rgb(211, 250, 153);
-  color: green;
-  animation: status 4s ease  forwards;
-}
-#status.error{
-  background-color: rgb(250, 129, 92);
-  color: rgb(252, 252, 252);
-  animation: status 4s ease  forwards;
-}
-
-@keyframes status{
-  0%{
-    opacity: 1;
-    pointer-events: all;
-  }
-  90%{
-    opacity: 1;
-    pointer-events: all;
-  }
-  100%{
-    opacity: 0;
-    pointer-events: none;
-  }
 }
